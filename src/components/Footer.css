@@ -1,0 +1,93 @@
+/* Ensure the body takes full height */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container for the page content */
+.page-content {
+  flex: 1; /* This makes sure the content grows to take available space */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #2c3e50; /* Darker blue-gray for a modern look */
+  color: #ecf0f1; /* Light gray for better contrast */
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto; /* Pushes the footer to the bottom of the page */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Aligns items vertically centered */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-left, .footer-right {
+  flex: 1;
+  padding: 0 1rem;
+}
+
+.footer-left {
+  text-align: left;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.footer-logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo {
+  max-width: 70px; /* Adjusted size for a smaller logo */
+  height: auto;
+  display: block;
+  margin-right: 0.5rem; /* Space between the logo and text */
+}
+
+.footer-logo-text {
+  font-size: 1rem; /* Adjust as needed */
+  font-weight: bold;
+  color: #ecf0f1;
+}
+
+.footer-right p {
+  margin: 0.5rem 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-left, .footer-right {
+    padding: 0.5rem 0; /* Adjust padding for smaller screens */
+    text-align: center; /* Center text on smaller screens */
+  }
+
+  .footer-logo-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-logo {
+    margin-bottom: 0.5rem; /* Space below the logo on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-logo-text {
+    font-size: 0.9rem; /* Smaller font size for very small screens */
+  }
+}

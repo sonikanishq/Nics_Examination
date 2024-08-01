@@ -1,0 +1,149 @@
+.instruction-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+}
+
+.instruction-content {
+  overflow-y: auto; /* Enable vertical scrolling */
+  flex: 1; /* Take up remaining space */
+}
+
+.instruction-page h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.instruction-page ul {
+  list-style-type: decimal;
+  margin: 1rem 0;
+  padding-left: 2rem;
+}
+
+.instruction-page p {
+  margin: 1rem 0;
+}
+
+.language-selection {
+  margin: 2rem 0;
+}
+
+.language-selection label {
+  margin-right: 1rem;
+}
+
+.language-selection select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.confirmation-section {
+  margin: 2rem 0;
+}
+
+.confirmation-section input {
+  margin-right: 0.5rem;
+}
+
+.continue-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 150px; /* Set width to a smaller value */
+}
+
+.continue-button:hover {
+  background-color: #45a049;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .instruction-page h1 {
+    font-size: 1.6rem;
+  }
+
+  .instruction-page ul {
+    padding-left: 1.5rem;
+  }
+
+  .continue-button {
+    width: 120px; /* Adjust button width for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .instruction-page {
+    padding: 1.5rem;
+  }
+
+  .instruction-page h1 {
+    font-size: 1.4rem;
+  }
+
+  .instruction-page ul {
+    padding-left: 1rem;
+  }
+
+  .language-selection {
+    margin: 1.5rem 0;
+  }
+
+  .language-selection label {
+    margin-right: 0.75rem;
+  }
+
+  .language-selection select {
+    padding: 0.4rem;
+  }
+
+  .confirmation-section {
+    margin: 1.5rem 0;
+  }
+
+  .continue-button {
+    width: 100px; /* Adjust button width for small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .instruction-page {
+    padding: 1rem;
+  }
+
+  .instruction-page h1 {
+    font-size: 1.2rem;
+  }
+
+  .instruction-page ul {
+    padding-left: 0.5rem;
+  }
+
+  .language-selection {
+    margin: 1rem 0;
+  }
+
+  .language-selection label {
+    margin-right: 0.5rem;
+  }
+
+  .language-selection select {
+    padding: 0.3rem;
+  }
+
+  .confirmation-section {
+    margin: 1rem 0;
+  }
+
+  .continue-button {
+    width: 90px; /* Adjust button width for very small screens */
+  }
+}

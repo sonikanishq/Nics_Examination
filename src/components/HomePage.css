@@ -1,0 +1,106 @@
+/* src/components/HomePage.css */
+.home-page-login h1{
+    color: red;
+}
+.home-page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.home-page-content {
+    display: flex;
+    flex: 1;
+}
+
+.home-page-image {
+    flex: 1;
+    padding: 1rem;
+}
+
+.home-page-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.home-page-login {
+    flex: 1;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-page-login h2 {
+    margin-bottom: 1rem;
+}
+
+.continue-button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.continue-button:hover {
+    background-color: #555;
+}
+
+.home-page-footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .home-page-content {
+        flex-direction: column; /* Stack content vertically on medium screens */
+    }
+
+    .home-page-image, .home-page-login {
+        flex: none; /* Remove flex-grow */
+        width: 100%; /* Full width */
+        padding: 0.5rem; /* Adjust padding */
+    }
+}
+
+@media (max-width: 768px) {
+    .continue-button {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .home-page-login h2 {
+        font-size: 1.5rem; /* Smaller font size for headings */
+        margin-bottom: 0.5rem; /* Adjust margin */
+    }
+
+    .home-page-image img {
+        border-radius: 4px; /* Adjust border radius for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .home-page-login h2 {
+        font-size: 1.2rem; /* Even smaller font size for very small screens */
+    }
+    
+    .continue-button {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.8rem;
+    }
+    
+    .home-page-footer {
+        padding: 0.5rem;
+    }
+}

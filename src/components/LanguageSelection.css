@@ -1,0 +1,32 @@
+.language-selection-container {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.language-selection-container h2 {
+  margin-bottom: 1rem;
+}
+
+.language-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.language-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+.language-button:hover {
+  background-color: #555;
+}

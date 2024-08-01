@@ -1,0 +1,118 @@
+/* Full-screen background image */
+.login-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.login-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Send image behind other elements */
+}
+
+/* Transparent black overlay */
+.login-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Black with transparency */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Centered login form with transparency */
+.login-form {
+  max-width: 400px;
+  width: 90%;
+  background: rgba(255, 255, 255, 0.8); /* White with slight transparency */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+}
+
+/* Title styling */
+.login-form h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+/* Input fields with transparency */
+.login-form input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
+  color: #333; /* Text color */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Button styling with transparency */
+.login-form button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: rgba(76, 175, 80, 0.8); /* Green with transparency */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: rgba(76, 175, 80, 1); /* Solid green on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .login-form {
+    max-width: 90%; /* Reduce max width on smaller screens */
+    padding: 1.5rem; /* Adjust padding */
+  }
+
+  .login-form h2 {
+    font-size: 1.6rem; /* Adjust font size */
+  }
+
+  .login-form input {
+    padding: 0.7rem; /* Adjust input padding */
+  }
+
+  .login-form button {
+    padding: 0.7rem; /* Adjust button padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .login-form {
+    max-width: 95%; /* Further reduce max width on very small screens */
+    padding: 1rem; /* Further adjust padding */
+  }
+
+  .login-form h2 {
+    font-size: 1.4rem; /* Further adjust font size */
+  }
+
+  .login-form input {
+    padding: 0.6rem; /* Further adjust input padding */
+  }
+
+  .login-form button {
+    padding: 0.6rem; /* Further adjust button padding */
+  }
+
+  .login-image img {
+    object-fit: cover; /* Ensure image covers the background */
+  }
+}
